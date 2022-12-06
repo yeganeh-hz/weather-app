@@ -96,3 +96,10 @@
 .farenheit {
   font-size: 24px;
 }
+.repository-adress {
+  display: block;
+  margin: 15px auto;
+  text-align: center;
+  color: #113f67;
+  text-decoration: underline;
+}
