@@ -64,3 +64,5 @@ if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 time.innerHTML = `${hour}:${minutes}`;
+
+// this is for testing a new commit
