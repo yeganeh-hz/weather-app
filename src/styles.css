@@ -51,7 +51,7 @@ body {
 }
 #currentCity {
   margin-left: 40px;
-  padding-bottom: -30px;
+  line-height: 20px;
 }
 .city {
   margin-left: 20px;
@@ -117,5 +117,8 @@ body {
   text-align: center;
 }
 ul {
+  list-style: none;
   padding-top: 20px;
+  line-height: 20px;
+  margin: 0px;
 }
