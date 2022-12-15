@@ -1,5 +1,5 @@
 body {
-  background-image: url("./images/Sky\ Clouds\ GIF\ -\ Sky\ Clouds\ Rosamrenova\ -\ Discover\ &\ Share\ GIFs.gif");
+  /* background-image: url("./images/Sky\ Clouds\ GIF\ -\ Sky\ Clouds\ Rosamrenova\ -\ Discover\ &\ Share\ GIFs.gif"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -50,28 +50,30 @@ body {
   cursor: pointer;
 }
 #currentCity {
-  margin-left: 40px;
-  line-height: 20px;
+  padding-top: 10px;
+  line-height: 40px;
+  font-size: 32px;
+  display: block;
+  margin: 0 auto;
+  text-align: right;
+  text-transform: capitalize;
 }
 .city {
-  margin-left: 20px;
-  font-size: 32px;
+  display: block;
+  margin: auto;
+  text-align: right;
+  margin-right: 20px;
 }
 .tempreture {
   text-align: left;
   margin-left: 20px;
   font-size: 50px;
 }
-.today {
-  font-size: 20px;
-  font-weight: light;
-  margin-left: 20px;
-  padding-top: 0px;
-}
+
 .temp {
   font-size: 20px;
   font-weight: light;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 .forcast {
   background-color: #f8fcfb;
@@ -98,12 +100,15 @@ body {
   color: grey;
 }
 .time {
-  padding: 10px;
   font-size: 20px;
+  padding-left: 10px;
 }
-.centigrade,
-.farenheit {
-  font-size: 24px;
+.units {
+  font-size: 20px;
+  position: relative;
+  top: -20px;
+  left: -10px;
+  text-decoration: none;
 }
 .repository-adress {
   display: block;
@@ -119,6 +124,7 @@ body {
 ul {
   list-style: none;
   padding-top: 20px;
-  line-height: 20px;
+  line-height: 27px;
   margin: 0px;
+  margin-left: -40px;
 }

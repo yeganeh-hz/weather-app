@@ -19,10 +19,6 @@
       href="https://fonts.googleapis.com/css2?family=Cantarell&family=PT+Mono&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/8218c4348f.js"
-      crossorigin="anonymous"
-    ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
@@ -43,43 +39,44 @@
         </div>
         <br />
       </form>
-
-      <div class="current city">
-        <div id="currentCity">Tehran</div>
-        <span class="today" id="today">Friday</span
-        ><span class="time">11:00</span>
-      </div>
       <div class="row">
-        <div class="col-7 current tempreture">
-          <i class="fa-solid fa-sun"></i><span id="current-temp">19</span
-          ><a href="#" class="centigrade">°C</a
-          ><a href="#" class="farenheit">/°F</a>
-          <div class="col-4 temp">
-            <span id="temp-min">18°C</span> / <span id="temp-max">24°C</span>
+        <div class="col current tempreture">
+          <img
+            src="https://openweathermap.org/img/wn/04d@2x.png"
+            id="icon"
+          /><span id="current-temp">19</span>
+          <span class="units">
+            <a href="#" class="centigrade">°C</a>|<a href="#" class="farenheit">
+              °F</a
+            >
+          </span>
+          <div class="temp">
+            <span id="temp-min">18°C</span> /
+            <span id="temp-max">24°C</span>
           </div>
         </div>
         <ul class="col describe">
-          <li><div id="description">Sunny</div></li>
-          <li>Percipitation: 0%</li>
-          <li>Humidity: 73%</li>
-          <li>Wind: 2km/h</li>
+          <li id="description">Sunny</li>
+          <li>Feels like: <span id="real-feel">15</span>°C</li>
+          <li>Humidity: <span id="Humidity">73</span>%</li>
+          <li>Wind Speed :<span id="wind-speed">2</span>km/h</li>
         </ul>
+        <div class="col current city">
+          <div id="currentCity">Tehran</div>
+          <span class="today" id="date"></span>
+        </div>
       </div>
+
       <div class="row">
         <div class="col forcast">
           <p class="day first">Sat</p>
           <div class="col">
-            <span class="emoji"><i class="fa-solid fa-cloud-rain"></i></span>
-          </div>
-          <div class="col">
             <span class="low">6°C /</span><span class="high"> 15°C</span>
           </div>
         </div>
+
         <div class="col forcast">
           <p class="day">Sun</p>
-          <div class="col">
-            <span class="emoji"><i class="fa-solid fa-cloud"></i></span>
-          </div>
           <div class="col">
             <span class="low">8°C /</span><span class="high"> 18°C</span>
           </div>
@@ -87,19 +84,12 @@
         <div class="col forcast">
           <p class="day">Mon</p>
           <div class="col">
-            <span class="emoji"
-              ><i class="fa-solid fa-cloud-sun-rain"></i
-            ></span>
-          </div>
-          <div class="col">
             <span class="low">13°C /</span><span class="high"> 21°C</span>
           </div>
         </div>
         <div class="col forcast">
           <p class="day">Tue</p>
-          <div class="col">
-            <span class="emoji"><i class="emoji fa-solid fa-sun"></i></span>
-          </div>
+
           <div class="col">
             <span class="low">15°C /</span><span class="high"> 24°C</span>
           </div>
@@ -107,20 +97,18 @@
         <div class="col forcast">
           <p class="day">Wed</p>
           <div class="col">
-            <span class="emoji"><i class="fa-solid fa-cloud-bolt"></i></span>
-          </div>
-          <div class="col">
             <span class="low">6°C /</span><span class="high"> 19°C</span>
           </div>
         </div>
       </div>
-      <div class="repository-adress">
-        <a href="https://github.com/yeganeh-hz/weather-app" target="_blank"
-          >Open-source code by</a
-        >
-        Yeganeh Hazrati
-      </div>
     </div>
+    <div class="repository-adress">
+      <a href="https://github.com/yeganeh-hz/weather-app" target="_blank"
+        >Open-source code by</a
+      >
+      Yeganeh Hazrati
+    </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>
