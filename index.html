@@ -12,55 +12,115 @@
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
-      
-    /><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cantarell&family=PT+Mono&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8218c4348f.js" crossorigin="anonymous"></script>
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cantarell&family=PT+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8218c4348f.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="contains">
-      
-      <form id ="submit-form">
+    <div class="container-fluid">
+      <form id="submit-form">
         <div class="row">
-          <div class="col-9" >
-            <input type="search" id ="search-engine" class="search" placeholder="Enter your current city . . ." />
+          <div class="col-9">
+            <input
+              type="search"
+              id="search-engine"
+              class="search"
+              placeholder="Enter your current city . . ."
+            />
           </div>
           <div class="col-3">
             <button type="submit" class="submit">Search</button>
           </div>
         </div>
-        <br/>
+        <br />
       </form>
+
+      <div class="current city">
+        <div id="currentCity">Tehran</div>
+        <span class="today" id="today">Friday</span
+        ><span class="time">11:00</span>
+      </div>
       <div class="row">
-        <div class="col-7 current city"><div>
-          <i class="fa-solid fa-sun"></i><span id="currentCity">Tehran</span></div>
-          <span class="today" id = "today">Friday</span><span class="time">11:00</span>
-          <div class="today" id="description">Sunny</div>
+        <div class="col-7 current tempreture">
+          <i class="fa-solid fa-sun"></i><span id="current-temp">19</span
+          ><a href="#" class="centigrade">°C</a
+          ><a href="#" class="farenheit">/°F</a>
+          <div class="col-4 temp">
+            <span id="temp-min">18°C</span> / <span id="temp-max">24°C</span>
+          </div>
         </div>
-        <div class="col current tempreture"><span id="current-temp">19</span><a href="#" class="centigrade">°C</a><a href="#" class ="farenheit">/°F</a>
-          <div class="col temp"> <span id="temp-min">18°C</span> / <span id ="temp-max">24°C</span></div>
-        </div>
+        <ul class="col describe">
+          <li><div id="description">Sunny</div></li>
+          <li>Percipitation: 0%</li>
+          <li>Humidity: 73%</li>
+          <li>Wind: 2km/h</li>
+        </ul>
       </div>
       <div class="row">
         <div class="col forcast">
-            <p class="day first">Sat</p><div class="col"><span class="emoji"><i class="fa-solid fa-cloud-rain"></i></span></div><div class="col"><span class="low">6°C /</span><span class="high"> 15°C</span></div>
+          <p class="day first">Sat</p>
+          <div class="col">
+            <span class="emoji"><i class="fa-solid fa-cloud-rain"></i></span>
+          </div>
+          <div class="col">
+            <span class="low">6°C /</span><span class="high"> 15°C</span>
+          </div>
         </div>
         <div class="col forcast">
-            <p class="day">Sun</p><div class="col"><span class="emoji"><i class="fa-solid fa-cloud"></i></span></div><div class="col"><span class="low">8°C /</span><span class="high"> 18°C</span></div>
+          <p class="day">Sun</p>
+          <div class="col">
+            <span class="emoji"><i class="fa-solid fa-cloud"></i></span>
+          </div>
+          <div class="col">
+            <span class="low">8°C /</span><span class="high"> 18°C</span>
+          </div>
         </div>
         <div class="col forcast">
-            <p class="day">Mon</p><div class="col"><span class ="emoji"><i class="fa-solid fa-cloud-sun-rain"></i></span></div><div class="col"><span class="low">13°C /</span><span class="high"> 21°C</span></div>
+          <p class="day">Mon</p>
+          <div class="col">
+            <span class="emoji"
+              ><i class="fa-solid fa-cloud-sun-rain"></i
+            ></span>
+          </div>
+          <div class="col">
+            <span class="low">13°C /</span><span class="high"> 21°C</span>
+          </div>
         </div>
         <div class="col forcast">
-            <p class="day">Tue</p><div class="col"><span class= "emoji"><i class="emoji fa-solid fa-sun"></i></span></div><div class="col"><span class="low">15°C /</span><span class="high"> 24°C</span></div>
+          <p class="day">Tue</p>
+          <div class="col">
+            <span class="emoji"><i class="emoji fa-solid fa-sun"></i></span>
+          </div>
+          <div class="col">
+            <span class="low">15°C /</span><span class="high"> 24°C</span>
+          </div>
         </div>
         <div class="col forcast">
-            <p class="day">Wed</p><div class="col"><span class="emoji"><i class="fa-solid fa-cloud-bolt"></i></span></div><div class="col"><span class="low">6°C /</span><span class="high"> 19°C</span></div>
+          <p class="day">Wed</p>
+          <div class="col">
+            <span class="emoji"><i class="fa-solid fa-cloud-bolt"></i></span>
+          </div>
+          <div class="col">
+            <span class="low">6°C /</span><span class="high"> 19°C</span>
+          </div>
         </div>
+      </div>
+      <div class="repository-adress">
+        <a href="https://github.com/yeganeh-hz/weather-app"
+          >Open-source code by</a
+        >
+        Yeganeh Hazrati
+      </div>
     </div>
-    <a class="repository-adress" href="https://github.com/yeganeh-hz/weather-app">open-source code by Yeganeh Hazrati</a>
     <script src="src/index.js"></script>
   </body>
 </html>
