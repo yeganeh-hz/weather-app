@@ -76,28 +76,20 @@ body {
   margin-left: 40px;
 }
 .forcast {
-  background-color: #f8fcfb;
   display: block;
   text-align: center;
-  height: 200px;
-  border-radius: 6px;
-  margin: 10px;
-  padding-top: 15px;
+  margin: 20px auto;
+  line-height: 300%;
+  font-size: 20px;
+  color: black;
+  padding-top: 20px;
 }
 .day {
-  font-size: 20px;
+  opacity: 0.7;
 }
-.emoji {
-  font-size: 38px;
-  color: gray;
-}
-.high,
-.low {
-  font-size: 20px;
-  line-height: 90px;
-}
-.low {
-  color: grey;
+
+.low-temp {
+  opacity: 0.7;
 }
 .time {
   font-size: 20px;
