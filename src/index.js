@@ -45,6 +45,8 @@ function showTemp(response) {
   );
   function tempToFar(event) {
     event.preventDefault();
+    centigrade.classList.remove("active");
+    farenheit.classList.add("active");
     let tempToFarenheit = Math.round(response.data.main.temp * 1.8 + 32);
     currentTempreture.innerHTML = tempToFarenheit;
     let minTempF = Math.round(response.data.main.temp_min * 1.8 + 32);
@@ -55,6 +57,9 @@ function showTemp(response) {
   let farenheit = document.querySelector(".farenheit");
   farenheit.addEventListener("click", tempToFar);
   function tempToCenti(event) {
+    farenheit.classList.remove("active");
+    centigrade.classList.add("active");
+
     event.preventDefault();
     currentTempreture.innerHTML = tempC;
     tempMin.innerHTML = `${minTempC}°C`;
